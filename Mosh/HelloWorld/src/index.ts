@@ -1,4 +1,9 @@
-let age: number = 20;
-
-if (age < 50)
-  age += 10;
+function calculateTax(income: number): number {
+  let x;
+  if (income > 100_000) {
+    x = income * 0.8;
+  } else {
+    x = income * 0.9;
+  }
+  return x;
+}
